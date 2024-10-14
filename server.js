@@ -11,10 +11,6 @@ app.use(express.json());
 app.use(express.static("public"));
 app.set("view engine", "ejs"); // Uncomment this line to use EJS
 
-// Optional: Set the views directory if using a custom path
-// const templatespath = path.join(__dirname, '../templates');
-// app.set("views", templatespath);
-
 app.get("/", (req, res) => {
     res.render("login_page.ejs");
 });
